@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_email_validator/email_validator.dart';
 import 'package:plantss/constants.dart';
 import 'package:plantss/screens/home.dart';
+import 'package:plantss/screens/login.dart';
 import 'package:plantss/widgets/button.dart';
 import 'package:plantss/widgets/textfield.dart';
 
@@ -155,7 +156,12 @@ class _RegisterState extends State<Register> {
                       ),
                       TextButton(
                         onPressed: () {
-                          Navigator.pop(context);
+                             Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Login(),
+                            ),
+                          );
                         },
                         child: const Text(
                           'Login',

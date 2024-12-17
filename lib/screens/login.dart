@@ -22,9 +22,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: const IconThemeData(
-          color: Colors.white,
-        ),
+   
         backgroundColor: Colors.green,
         title: const Text(
           'Login',
@@ -79,7 +77,7 @@ class _LoginState extends State<Login> {
                     alignment: Alignment.topRight,
                     child: TextButton(
                       onPressed: () {
-                        // منطق استعادة كلمة المرور
+                     
                       },
                       child: const Text(
                         "Forgot Password?",

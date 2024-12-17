@@ -1,13 +1,7 @@
 
-
-
-
 import 'package:flutter/material.dart';
 import 'package:plantss/provider/cart.dart';
-import 'package:plantss/screens/home.dart';
 import 'package:plantss/screens/login.dart';
-import 'package:plantss/screens/register.dart';
-
 import 'package:provider/provider.dart';
 
 void main() {

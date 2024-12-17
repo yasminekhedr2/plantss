@@ -22,7 +22,7 @@ class HomeBodyGridview extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => DetailsScreen(Product: items[index]), // تعديل الاسم
+                builder: (context) => DetailsScreen(Product: items[index]), 
               ),
             );
           },
@@ -35,7 +35,7 @@ class HomeBodyGridview extends StatelessWidget {
               backgroundColor: Colors.black12,
               trailing: IconButton(
                 onPressed: () {
-                  // إضافة المنتج إلى السلة باستخدام Consumer
+                  
                   Provider.of<Cart>(context, listen: false).add(items[index]);
                 },
                 icon: const Icon(
